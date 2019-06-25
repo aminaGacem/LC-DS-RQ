@@ -1,0 +1,15 @@
+works for a graph of 100 nodes in each slave
+6 slaves +1 master
+query of 7 constraints on edges
+
+arguments:
+	arg0: number of sources
+	arg1: number of targets
+
+if you want to scale to another size of graph change
+replace 100 by the number of nodes per slave
+replace 600 by the number of nodes per slave*6
+replace the directories to connect to neo4j
+
+in LocalReachability HashSet<Integer> was replaced by an array of boolean 
+
